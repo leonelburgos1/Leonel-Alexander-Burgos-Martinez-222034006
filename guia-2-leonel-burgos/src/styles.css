@@ -1,0 +1,198 @@
+:root{
+    --fuenteTitulo: 2rem;
+    --color_tituloh2: #ff4900;
+    --fuenteparrafo: 1rem;
+    --color_parrafo: #0093FF;
+    --fuenteparrafo2: 12px;
+    --color_parrafo2: #c500ff;
+    --fuente: Nerko One;
+    --colorEncabezado: #000000; 
+    --colorletraEncabezado: #ffffff ;
+    --fuenteEncabezado: 1.5rem;
+    --colorfila1-3: #bec1c3;
+    --colorfuente1-3: #000000; 
+    --colorfila2: #045795;
+    --colordivcontenedor: #1b3925;
+    --anchocont: 1200px;
+    --altocont: 750px;
+    --colordivhead: #3ba85f;
+    --anchodivhead: 100%;
+    --alturadivhead:80px;
+    --colordivhead1: #cd595c;
+    --colordivhead2: #bec1c3;
+    --anchodivhead1: 50px;
+    --anchodivhead2: 270px;
+    --altodivhead1-2: 50px;
+    --anchodiv3: 200px;
+    --altodiv3: 450px;
+    --colordiv3: #4e8a83;
+    --altodiv4: 450px;
+    --colordiv4: #435452;
+    --altodiv5: 200px;
+    --colordiv5: #329681;
+    --colorfooter1-2-3: #05564d;
+    --colorfooter2: #a4ccc4;
+    --anchofooter1-2-3: 200px;
+}
+/*class*/
+.titulos {
+    color: var(--color_tituloh2);
+    font-size: var(--fuenteTitulo);
+}
+
+.parrafo{
+    color: var(--color_parrafo);
+    font-size: var(--fuenteparrafo);
+}
+
+.parrafo2{
+    color: var(--color_parrafo2);
+    font-size: var(--fuenteparrafo2);
+    font-family: var(--fuente);
+}
+
+a {
+    color: #001bff;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+a:visited {
+    color: #4CAF50;
+}
+
+a:hover {
+    color: #ff6600; 
+    text-decoration: underline;
+}
+
+.encabezado{
+    background-color: var(--colorEncabezado);
+    color: var(--colorletraEncabezado);
+    font-size: var(--fuenteEncabezado);
+}
+
+.fila1-3{
+    background-color: var(--colorfila1-3);
+    color: var(--colorfuente1-3);
+    font-size: var(--fuenteEncabezado);
+}
+
+.fila2{
+    background-color: var(--colorfila2);
+    color: var(--colorletraEncabezado);
+    font-size: var(--fuenteEncabezado);
+}
+
+.contenedor{
+ background-color: var(--colordivcontenedor);
+ width:var(--anchocont);
+ height: var(--altocont);
+ margin: auto;
+}
+
+.divhead{
+    background-color: var(--colordivhead);
+    width: var(--anchodivhead);
+    top: 0;
+    height: var(--alturadivhead);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divhead1{
+    width: var(--anchodivhead1);
+    height: var(--altodivhead1-2);
+    margin-left: 50px;
+    background-image: url('https://cdn.worldvectorlogo.com/logos/kawasaki-premium-log-1.svg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.divhead2{
+    background-color: var(--colordivhead2);
+    width: var(--anchodivhead2);
+    height: var(--altodivhead1-2);
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parrafodiv {
+    margin-left: 30px;
+    font-size: var(--fuenteTitulo); 
+    align-items: center;
+    line-height: 0;
+}
+
+i{
+    font-size: 50px; 
+    margin: auto;
+}
+
+.div3{
+    float: left;
+    width: var(--anchodiv3);
+    height: var(--altodiv3);
+    background-color: var(--colordiv3);
+    margin-top: 15px;
+    background-image: url('https://i.pinimg.com/236x/9b/fb/a2/9bfba228090f03dae48ecc4bc5a02dc4.jpg'); 
+    background-position: center;
+    background-size: contain;
+}
+
+.div4{
+    width: 81%;
+    height: var(--altodiv4);
+    background-color: var(--colordiv4);
+    margin-top: 15px;
+    float: left;
+    margin-left: 15px;
+    box-shadow: 10px 10px 10px rgba(205, 32, 32, 0.3);
+}
+
+.footer{
+    align-self: flex-end;
+    width: 97.5%;
+    height: 20%;
+    flex: 1;
+    background-color: var(--colordiv5);
+    float: left;
+    margin: 15px;
+}
+
+.footer1{
+    width: var(--anchofooter1-2-3);
+    background-color: var(--colorfooter1-2-3) ;
+    float: left;
+    height: 80%;
+    margin: 15px;
+    margin-left: 130px;
+    background-image: url('https://i.pinimg.com/originals/77/2d/10/772d10c3d5872a678496f8e82785ab3c.gif');
+    background-size: cover; 
+    background-position: center;
+}
+.footer2{
+    width: var(--anchofooter1-2-3);
+    background-color: var(--colorfooter2) ;
+    float: left;
+    height: 80%;
+    margin: 15px;
+    margin-left: 130px;
+    font-weight: bold;
+    box-shadow: 15px 15px 15px rgba(60, 12, 189, 0.3);
+}
+.footer3{
+    width: var(--anchofooter1-2-3);
+    background-color: var(--colorfooter1-2-3) ;
+    float: left;
+    height: 80%;
+    margin: 15px;
+    margin-left: 130px;
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXg0ODFpaXEwN2M3MmI3bTZ3cWVsNXdvdXQxdDhyMXV4aGU0NDN4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HU3dNWyLG3drfBS/giphy.gif');
+    background-size: cover; 
+    background-position: center;
+    
+}
