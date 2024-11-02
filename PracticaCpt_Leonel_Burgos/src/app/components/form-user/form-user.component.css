@@ -63,3 +63,21 @@ input:hover {
     left: 10px; 
     color: #000000; 
 }
+
+.input-container .icon {
+    position: absolute;
+    left: 10px; /* Posiciona el icono dentro del campo */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none; /* Evita que el icono interfiera con el clic en el input */
+}
+
+.input-container input {
+    width: 100%;
+    padding-left: 35px; /* Añade suficiente espacio para el icono */
+    box-sizing: border-box;
+    height: 40px; /* Ajusta el tamaño del campo si es necesario */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
