@@ -1,34 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PracticaCpt</title>
-</head>
-<body>
-    <div class="container">
-      <div class="User">
-        <app-form-user></app-form-user>
-      </div>
-      <br>
-      <br>
-      <div class="manager">
-        <app-form-manager></app-form-manager>
-      </div>
-      <h2 class="title1">Detalles de la licencia</h2>
-      <div class="detalles">
-        <app-form-license></app-form-license>
-      </div>
-      <br>
-      <div class="boton">
-        <p-button 
-        label="Enviar" 
-        [loading]="loading" 
-        (onClick)="load()">
-      </p-button>
-      </div>
-      <br>
-    </div>
-</body>
-</html>
 
+  <div class="container">
+    <div class="User">
+      <!-- Emite los datos del formulario de usuario al método UserData en el ts general -->
+      <app-form-user (formData)="UserData($event)"></app-form-user>
+    </div>
+    <br><br>
+    
+    <div class="manager">
+      <app-form-manager (formData)="ManagerData($event)"></app-form-manager>
+    </div>
+    
+    <h2 class="title1">Detalles de la licencia</h2>
+    
+    <div class="detalles">
+      <app-form-license (formData)="LicenseData($event)"></app-form-license>
+    </div>
+    
+    <br>
+    
+    <div class="boton">
+      <p-button label="Enviar" 
+      [loading]="loading" 
+      (onClick)="load()">
+      </p-button>
+    </div>
+    <br>
+  </div>
