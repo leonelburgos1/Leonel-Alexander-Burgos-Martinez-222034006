@@ -6,6 +6,8 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputTextModule } from 'primeng/inputtext';
+import { LoginComponent } from '../login/login.component';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-register',
@@ -18,28 +20,30 @@ export class RegisterComponent {
   registroForm: FormGroup;
 
   //Arreglo de tipo clave valor
-  generos: {label: string; value: string}[] =[
-    {label: 'Masculino', value:'M'},
-    {label: 'Femenino', value:'F'},
-    {label: 'Otro', value:'other'}
 
-  ];
-
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(private fb: FormBuilder, private loginService: LoginService) {
     this.registroForm = this.fb.group({
-      nombre: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      fechaNacimiento: ['', Validators.required],
-      genero: ['', Validators.required]
+      password: ['',[Validators.required, Validators.minLength(6)]],
     });
   }
-    onSubmit() {
+
+  onSubmit(): void {
       if (this.registroForm.valid) {
-        console.log('Formulario Enviado', this.registroForm.value);
-        this.router.navigate(['/logintest']);
-      } else {
-        this.registroForm.markAllAsTouched();
-      }
+        const {username,password} = this.registroForm.value;
+        this.loginService.register(username, password).subscribe({
+          next: Response => {
+            console.log('Usuario registrado exitosamente', Response);
+          },
+          error: error =>{
+            console.error('Error en el registro del usuario', error);
+          },
+          complete: () =>
+          {
+              console.log('Proceso de registro completado');
+          }          
+        })
+      } 
     }
   }
 

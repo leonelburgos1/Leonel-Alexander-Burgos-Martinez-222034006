@@ -36,7 +36,9 @@ export class LoginTestComponent {
       const {email,password}= this.userForm.value;
       // el login es el que esta en el loginservice, esto quiere deir que los servicios se pueden hacer por
       // medio del constructor que se tiene definido, todo porque lo defini arriba
-      this.loginService.login(email,password).subscribe(Response => {console.log("exitoso", Response)})
+      this.loginService.login(email,password).subscribe(Response => {console.log("exitoso", Response)}) // aqui llama al metodo
+      // login y le envia esta información recopilada
+      // que se llama login y se lo utiliza para enviar el email, password, que este esta en el servicio
       console.log(this.userForm.value);
     }else{
       console.log('Formulario invalido');
@@ -44,3 +46,6 @@ export class LoginTestComponent {
   }
 
 }
+
+
+//Server=localhost;Database=dbtest2;User Id=sa,Password=12345678;TrustServerCertificate=true;
