@@ -1,0 +1,33 @@
+
+  <div class="container">
+    <div class="User">
+      <!-- Emite los datos del formulario de usuario al método UserData en el ts general -->
+      <app-form-user ></app-form-user>
+    </div>
+    <br><br>
+    
+    <div class="manager">
+      <app-form-manager></app-form-manager>
+    </div>
+    
+    <h2 class="title1">Detalles de la licencia</h2>
+    
+    <div class="detalles">
+      <app-form-license ></app-form-license>
+    </div>
+    
+    <br>
+    
+    <div class="boton">
+      <p-button label="Registrar" 
+      [loading]="loading" 
+      (onClick)="onSubmit()">
+      </p-button>
+    </div>
+    <div class="login-container">
+      <app-form-login></app-form-login>
+      <p-button label="Ingresar" [loading]="loading" (onClick)="onSubmitLogin()"></p-button>
+    </div>
+    
+    <br>
+  </div>

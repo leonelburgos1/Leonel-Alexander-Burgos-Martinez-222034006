@@ -1,0 +1,7 @@
+5. Tiene alguna incidencia definir en la base de datos los campos de fecha
+como tipo DATE o como VARCHAR al momento de enviar la petición.
+
+respuesta:
+al momento de enviar la petición no se tiene problemas aunque si cuando se revisa el registro de los datos en la base de datos ya que cuando se tiene las fechas como varchar las fechas salen de la siguiente manera 2024-11-22T05:00:00.000Z
+en cambio cuando se las define como DATE salen de forma correcta ósea así:
+2024-11-18. por lo tanto lo correcto es definir fechas como tipo DATE
