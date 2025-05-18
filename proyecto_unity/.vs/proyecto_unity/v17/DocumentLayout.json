@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aleza\\unity\\Leonel-Alexander-Burgos-Martinez-222034006\\proyecto_unity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{283F1C34-8C88-E146-B56F-DE745ED959F5}|Assembly-CSharp.csproj|c:\\users\\aleza\\unity\\leonel-alexander-burgos-martinez-222034006\\proyecto_unity\\assets\\scripts\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F1C34-8C88-E146-B56F-DE745ED959F5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{283F1C34-8C88-E146-B56F-DE745ED959F5}|Assembly-CSharp.csproj|c:\\users\\aleza\\unity\\leonel-alexander-burgos-martinez-222034006\\proyecto_unity\\assets\\scripts\\colectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{283F1C34-8C88-E146-B56F-DE745ED959F5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\colectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\aleza\\unity\\Leonel-Alexander-Burgos-Martinez-222034006\\proyecto_unity\\Assets\\Scripts\\Move.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Move.cs",
+              "ToolTip": "C:\\Users\\aleza\\unity\\Leonel-Alexander-Burgos-Martinez-222034006\\proyecto_unity\\Assets\\Scripts\\Move.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T04:25:49.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Colectable.cs",
+              "DocumentMoniker": "C:\\Users\\aleza\\unity\\Leonel-Alexander-Burgos-Martinez-222034006\\proyecto_unity\\Assets\\Scripts\\Colectable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Colectable.cs",
+              "ToolTip": "C:\\Users\\aleza\\unity\\Leonel-Alexander-Burgos-Martinez-222034006\\proyecto_unity\\Assets\\Scripts\\Colectable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Colectable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T04:25:40.114Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
